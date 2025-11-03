@@ -199,6 +199,16 @@ OUTER_LOOP:
 			fmt.Fprintln(formatter.ColorableStdOut,
 				internal.FailedSuitesReport(suites, formatter.NewWithNoColorBool(r.reporterConfig.NoColor)))
 		}
+
+		if suites.CountWithState(internal.TestSuiteStateFailed) > 0 {
+			fmt.Println("Test Suite Failed")
+		}
+		if suites.CountWithState(internal.TestSuiteStateFailedDueToTimeout) > 0 {
+			fmt.Println("Test Suite Failed due to timeout")
+		}
+		if suites.CountWithState(internal.TestSuiteStateFailedToCompile) > 0 {
+			fmt.Println("Test Suite Failed due to compile")
+		}
 		fmt.Printf("Test Suite Failed foo!\n")
 		command.Abort(command.AbortDetails{ExitCode: 1})
 	}
