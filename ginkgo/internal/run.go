@@ -64,6 +64,7 @@ func checkForNoTestsWarning(buf *bytes.Buffer) bool {
 }
 
 func runGoTest(suite TestSuite, cliConfig types.CLIConfig, goFlagsConfig types.GoFlagsConfig) TestSuite {
+	fmt.Printf("Running go test suite %s\n", suite.PackageName)
 	// As we run the go test from the suite directory, make sure the cover profile is absolute
 	// and placed into the expected output directory when one is configured.
 	if goFlagsConfig.Cover && !filepath.IsAbs(goFlagsConfig.CoverProfile) {
@@ -89,6 +90,7 @@ func runGoTest(suite TestSuite, cliConfig types.CLIConfig, goFlagsConfig types.G
 }
 
 func runSerial(suite TestSuite, ginkgoConfig types.SuiteConfig, reporterConfig types.ReporterConfig, cliConfig types.CLIConfig, goFlagsConfig types.GoFlagsConfig, additionalArgs []string) TestSuite {
+	fmt.Printf("Running serial test suite %s\n", suite.PackageName)
 	if goFlagsConfig.Cover {
 		goFlagsConfig.CoverProfile = AbsPathForGeneratedAsset(goFlagsConfig.CoverProfile, suite, cliConfig, 0)
 	}
@@ -158,6 +160,8 @@ func runSerial(suite TestSuite, ginkgoConfig types.SuiteConfig, reporterConfig t
 }
 
 func runParallel(suite TestSuite, ginkgoConfig types.SuiteConfig, reporterConfig types.ReporterConfig, cliConfig types.CLIConfig, goFlagsConfig types.GoFlagsConfig, additionalArgs []string) TestSuite {
+	fmt.Printf("Running parallel test suite %s\n", suite.PackageName)
+
 	type procResult struct {
 		passed               bool
 		hasProgrammaticFocus bool
@@ -240,6 +244,7 @@ func runParallel(suite TestSuite, ginkgoConfig types.SuiteConfig, reporterConfig
 	passed := true
 	for proc := 1; proc <= cliConfig.ComputedProcs(); proc++ {
 		result := <-procResults
+		fmt.Printf("proc %d got passed status: %b\n", proc, result.passed)
 		passed = passed && result.passed
 		suite.HasProgrammaticFocus = suite.HasProgrammaticFocus || result.hasProgrammaticFocus
 	}
