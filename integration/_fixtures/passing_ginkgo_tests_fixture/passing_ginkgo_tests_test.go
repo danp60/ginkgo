@@ -3,8 +3,8 @@ package passing_ginkgo_tests_test
 import (
 	"sync"
 
-	. "github.com/onsi/ginkgo/v2"
-	. "github.com/onsi/ginkgo/v2/integration/_fixtures/passing_ginkgo_tests_fixture"
+	. "github.com/danp60/ginkgo/v2"
+	. "github.com/danp60/ginkgo/v2/integration/_fixtures/passing_ginkgo_tests_fixture"
 	. "github.com/onsi/gomega"
 )
 

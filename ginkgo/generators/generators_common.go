@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/onsi/ginkgo/v2/ginkgo/command"
+	"github.com/danp60/ginkgo/v2/ginkgo/command"
 )
 
 type GeneratorsConfig struct {

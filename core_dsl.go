@@ -22,14 +22,14 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/danp60/ginkgo/v2/formatter"
+	"github.com/danp60/ginkgo/v2/internal"
+	"github.com/danp60/ginkgo/v2/internal/global"
+	"github.com/danp60/ginkgo/v2/internal/interrupt_handler"
+	"github.com/danp60/ginkgo/v2/internal/parallel_support"
+	"github.com/danp60/ginkgo/v2/reporters"
+	"github.com/danp60/ginkgo/v2/types"
 	"github.com/go-logr/logr"
-	"github.com/onsi/ginkgo/v2/formatter"
-	"github.com/onsi/ginkgo/v2/internal"
-	"github.com/onsi/ginkgo/v2/internal/global"
-	"github.com/onsi/ginkgo/v2/internal/interrupt_handler"
-	"github.com/onsi/ginkgo/v2/internal/parallel_support"
-	"github.com/onsi/ginkgo/v2/reporters"
-	"github.com/onsi/ginkgo/v2/types"
 )
 
 const GINKGO_VERSION = types.VERSION

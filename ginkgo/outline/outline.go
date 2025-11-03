@@ -15,7 +15,7 @@ import (
 
 const (
 	// ginkgoImportPath is the well-known ginkgo import path
-	ginkgoImportPath = "github.com/onsi/ginkgo/v2"
+	ginkgoImportPath = "github.com/danp60/ginkgo/v2"
 )
 
 // FromASTFile returns an outline for a Ginkgo test source file

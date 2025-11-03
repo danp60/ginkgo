@@ -6,10 +6,10 @@ import (
 	"io"
 	"os"
 
-	"github.com/onsi/ginkgo/v2/formatter"
-	"github.com/onsi/ginkgo/v2/internal"
-	"github.com/onsi/ginkgo/v2/reporters"
-	"github.com/onsi/ginkgo/v2/types"
+	"github.com/danp60/ginkgo/v2/formatter"
+	"github.com/danp60/ginkgo/v2/internal"
+	"github.com/danp60/ginkgo/v2/reporters"
+	"github.com/danp60/ginkgo/v2/types"
 )
 
 type failFunc func(message string, callerSkip ...int)

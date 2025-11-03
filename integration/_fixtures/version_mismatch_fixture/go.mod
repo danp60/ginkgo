@@ -1,9 +1,11 @@
 module version_mismatch_fixture
 
-go 1.19
+go 1.23.0
+
+toolchain go1.24.7
 
 require (
-	github.com/onsi/ginkgo/v2 v2.2.0
+	github.com/danp60/ginkgo/v2 v2.2.0
 	github.com/onsi/gomega v1.20.1
 )
 

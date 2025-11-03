@@ -1,7 +1,7 @@
 package example_test
 
 import (
-	. "github.com/onsi/ginkgo/v2/dsl/core"
+	. "github.com/danp60/ginkgo/v2/dsl/core"
 )
 
 var _ = Describe("DslCoreFixture", func() {

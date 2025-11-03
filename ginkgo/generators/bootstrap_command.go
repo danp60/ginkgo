@@ -7,10 +7,10 @@ import (
 	"os"
 	"text/template"
 
+	"github.com/danp60/ginkgo/v2/ginkgo/command"
+	"github.com/danp60/ginkgo/v2/ginkgo/internal"
+	"github.com/danp60/ginkgo/v2/types"
 	sprig "github.com/go-task/slim-sprig/v3"
-	"github.com/onsi/ginkgo/v2/ginkgo/command"
-	"github.com/onsi/ginkgo/v2/ginkgo/internal"
-	"github.com/onsi/ginkgo/v2/types"
 )
 
 func BuildBootstrapCommand() command.Command {
@@ -71,14 +71,14 @@ func generateBootstrap(conf GeneratorsConfig) {
 		Package:       determinePackageName(packageName, conf.Internal),
 		FormattedName: formattedName,
 
-		GinkgoImport:  `. "github.com/onsi/ginkgo/v2"`,
+		GinkgoImport:  `. "github.com/danp60/ginkgo/v2"`,
 		GomegaImport:  `. "github.com/onsi/gomega"`,
 		GinkgoPackage: "",
 		GomegaPackage: "",
 	}
 
 	if conf.NoDot {
-		data.GinkgoImport = `"github.com/onsi/ginkgo/v2"`
+		data.GinkgoImport = `"github.com/danp60/ginkgo/v2"`
 		data.GomegaImport = `"github.com/onsi/gomega"`
 		data.GinkgoPackage = `ginkgo.`
 		data.GomegaPackage = `gomega.`

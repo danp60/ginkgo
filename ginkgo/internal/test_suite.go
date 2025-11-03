@@ -10,7 +10,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/onsi/ginkgo/v2/types"
+	"github.com/danp60/ginkgo/v2/types"
 )
 
 const TIMEOUT_ELAPSED_FAILURE_REASON = "Suite did not run because the timeout elapsed"

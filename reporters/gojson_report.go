@@ -6,8 +6,8 @@ import (
 	"os"
 	"path"
 
-	"github.com/onsi/ginkgo/v2/internal/reporters"
-	"github.com/onsi/ginkgo/v2/types"
+	"github.com/danp60/ginkgo/v2/internal/reporters"
+	"github.com/danp60/ginkgo/v2/types"
 )
 
 // GenerateGoTestJSONReport produces a JSON-formatted in the test2json format used by `go test -json`

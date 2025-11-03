@@ -4,7 +4,7 @@ all:  vet test
 
 .PHONY: test
 test:
-	go run github.com/onsi/ginkgo/v2/ginkgo -r -p -randomize-all -keep-going
+	go run github.com/danp60/ginkgo/v2/ginkgo -r -p -randomize-all -keep-going
 
 .PHONY: vet
 vet:

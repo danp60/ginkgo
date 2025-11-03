@@ -8,9 +8,9 @@ import (
 	"sort"
 	"strings"
 
-	. "github.com/onsi/ginkgo/v2"
-	. "github.com/onsi/ginkgo/v2/internal/test_helpers"
-	"github.com/onsi/ginkgo/v2/types"
+	. "github.com/danp60/ginkgo/v2"
+	. "github.com/danp60/ginkgo/v2/internal/test_helpers"
+	"github.com/danp60/ginkgo/v2/types"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/gbytes"
 	"github.com/onsi/gomega/gexec"
@@ -466,7 +466,7 @@ var _ = Describe("Running Specs", func() {
 			It("should not have symbols", func() {
 				session := startGinkgo(fm.PathTo("symbol"), "--no-color")
 				Eventually(session).Should(gexec.Exit(0))
-				Ω(session).ShouldNot(gbytes.Say("github.com/onsi/ginkgo/v2.It")) // a symbol from ginkgo
+				Ω(session).ShouldNot(gbytes.Say("github.com/danp60/ginkgo/v2.It")) // a symbol from ginkgo
 			})
 		})
 
@@ -474,7 +474,7 @@ var _ = Describe("Running Specs", func() {
 			It("should have symbols", func() {
 				session := startGinkgo(fm.PathTo("symbol"), "--no-color", "--cpuprofile=cpu.out")
 				Eventually(session).Should(gexec.Exit(0))
-				Ω(session).Should(gbytes.Say("github.com/onsi/ginkgo/v2.It")) // a symbol from ginkgo
+				Ω(session).Should(gbytes.Say("github.com/danp60/ginkgo/v2.It")) // a symbol from ginkgo
 			})
 		})
 	})

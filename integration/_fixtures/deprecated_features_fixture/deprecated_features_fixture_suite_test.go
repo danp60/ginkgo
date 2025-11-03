@@ -3,7 +3,7 @@ package deprecated_features_fixture_test
 import (
 	"testing"
 
-	. "github.com/onsi/ginkgo/v2"
+	. "github.com/danp60/ginkgo/v2"
 	. "github.com/onsi/gomega"
 )
 
@@ -17,5 +17,5 @@ var _ = It("tries to perform an async assertion", func(done Done) {
 })
 
 var _ = Measure("tries to perform a measurement", func(b Benchmarker) {
-	
+
 })

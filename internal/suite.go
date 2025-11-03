@@ -6,10 +6,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/onsi/ginkgo/v2/internal/interrupt_handler"
-	"github.com/onsi/ginkgo/v2/internal/parallel_support"
-	"github.com/onsi/ginkgo/v2/reporters"
-	"github.com/onsi/ginkgo/v2/types"
+	"github.com/danp60/ginkgo/v2/internal/interrupt_handler"
+	"github.com/danp60/ginkgo/v2/internal/parallel_support"
+	"github.com/danp60/ginkgo/v2/reporters"
+	"github.com/danp60/ginkgo/v2/types"
 )
 
 type Phase uint

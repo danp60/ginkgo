@@ -9,9 +9,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/onsi/ginkgo/v2/ginkgo/command"
-	"github.com/onsi/ginkgo/v2/ginkgo/internal"
-	"github.com/onsi/ginkgo/v2/types"
+	"github.com/danp60/ginkgo/v2/ginkgo/command"
+	"github.com/danp60/ginkgo/v2/ginkgo/internal"
+	"github.com/danp60/ginkgo/v2/types"
 	"golang.org/x/tools/go/ast/inspector"
 )
 

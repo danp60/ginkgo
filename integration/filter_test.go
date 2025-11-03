@@ -1,14 +1,14 @@
 package integration_test
 
 import (
-        "path/filepath"
+	"path/filepath"
 
-	. "github.com/onsi/ginkgo/v2"
+	. "github.com/danp60/ginkgo/v2"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/gbytes"
 	"github.com/onsi/gomega/gexec"
 
-	. "github.com/onsi/ginkgo/v2/internal/test_helpers"
+	. "github.com/danp60/ginkgo/v2/internal/test_helpers"
 )
 
 var _ = Describe("Filter", func() {

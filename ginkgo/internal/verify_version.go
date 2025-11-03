@@ -6,8 +6,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/onsi/ginkgo/v2/formatter"
-	"github.com/onsi/ginkgo/v2/types"
+	"github.com/danp60/ginkgo/v2/formatter"
+	"github.com/danp60/ginkgo/v2/types"
 )
 
 var versiorRe = regexp.MustCompile(`v(\d+\.\d+\.\d+)`)
@@ -17,7 +17,7 @@ func VerifyCLIAndFrameworkVersion(suites TestSuites) {
 	mismatches := map[string][]string{}
 
 	for _, suite := range suites {
-		cmd := exec.Command("go", "list", "-m", "github.com/onsi/ginkgo/v2")
+		cmd := exec.Command("go", "list", "-m", "github.com/danp60/ginkgo/v2")
 		cmd.Dir = suite.Path
 		output, err := cmd.CombinedOutput()
 		if err != nil {
@@ -50,5 +50,5 @@ func VerifyCLIAndFrameworkVersion(suites TestSuites) {
 		fmt.Println(formatter.Fi(2, "{{bold}}%s{{/}} used by %s", version, strings.Join(packages, ", ")))
 	}
 	fmt.Println("")
-	fmt.Println(formatter.Fiw(1, formatter.COLS, "{{gray}}Ginkgo will continue to attempt to run but you may see errors (including flag parsing errors) and should either update your go.mod or your version of the Ginkgo CLI to match.\n\nTo install the matching version of the CLI run\n  {{bold}}go install github.com/onsi/ginkgo/v2/ginkgo{{/}}{{gray}}\nfrom a path that contains a go.mod file.  Alternatively you can use\n  {{bold}}go run github.com/onsi/ginkgo/v2/ginkgo{{/}}{{gray}}\nfrom a path that contains a go.mod file to invoke the matching version of the Ginkgo CLI.\n\nIf you are attempting to test multiple packages that each have a different version of the Ginkgo library with a single Ginkgo CLI that is currently unsupported.\n{{/}}"))
+	fmt.Println(formatter.Fiw(1, formatter.COLS, "{{gray}}Ginkgo will continue to attempt to run but you may see errors (including flag parsing errors) and should either update your go.mod or your version of the Ginkgo CLI to match.\n\nTo install the matching version of the CLI run\n  {{bold}}go install github.com/danp60/ginkgo/v2/ginkgo{{/}}{{gray}}\nfrom a path that contains a go.mod file.  Alternatively you can use\n  {{bold}}go run github.com/danp60/ginkgo/v2/ginkgo{{/}}{{gray}}\nfrom a path that contains a go.mod file to invoke the matching version of the Ginkgo CLI.\n\nIf you are attempting to test multiple packages that each have a different version of the Ginkgo library with a single Ginkgo CLI that is currently unsupported.\n{{/}}"))
 }

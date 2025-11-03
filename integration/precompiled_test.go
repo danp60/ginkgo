@@ -9,7 +9,7 @@ import (
 	"github.com/onsi/gomega/gbytes"
 	"github.com/onsi/gomega/gexec"
 
-	. "github.com/onsi/ginkgo/v2"
+	. "github.com/danp60/ginkgo/v2"
 )
 
 var _ = Describe("ginkgo build", func() {
@@ -30,7 +30,7 @@ var _ = Describe("ginkgo build", func() {
 		session, err := gexec.Start(cmd, GinkgoWriter, GinkgoWriter)
 		Ω(err).ShouldNot(HaveOccurred())
 		Eventually(session).Should(gexec.Exit(0))
-		Ω(session).Should(gbytes.Say("github.com/onsi/ginkgo/v2.It")) // a symbol from ginkgo
+		Ω(session).Should(gbytes.Say("github.com/danp60/ginkgo/v2.It")) // a symbol from ginkgo
 	})
 
 	It("should be possible to run the test binary directly", func() {

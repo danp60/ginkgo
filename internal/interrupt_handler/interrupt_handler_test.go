@@ -7,10 +7,10 @@ import (
 	"syscall"
 	"time"
 
-	. "github.com/onsi/ginkgo/v2"
-	"github.com/onsi/ginkgo/v2/internal/interrupt_handler"
-	"github.com/onsi/ginkgo/v2/internal/parallel_support"
-	. "github.com/onsi/ginkgo/v2/internal/test_helpers"
+	. "github.com/danp60/ginkgo/v2"
+	"github.com/danp60/ginkgo/v2/internal/interrupt_handler"
+	"github.com/danp60/ginkgo/v2/internal/parallel_support"
+	. "github.com/danp60/ginkgo/v2/internal/test_helpers"
 	. "github.com/onsi/gomega"
 )
 

@@ -1,14 +1,14 @@
 package reporters
 
 import (
-	"github.com/onsi/ginkgo/v2/types"
+	"github.com/danp60/ginkgo/v2/types"
 )
 
 type GoJSONReporter struct {
 	ev *GoJSONEventWriter
 }
 
-type specSystemExtractFn func (spec types.SpecReport) string
+type specSystemExtractFn func(spec types.SpecReport) string
 
 func NewGoJSONReporter(enc encoder, errFn specSystemExtractFn, outFn specSystemExtractFn) *GoJSONReporter {
 	return &GoJSONReporter{

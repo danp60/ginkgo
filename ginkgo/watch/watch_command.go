@@ -5,11 +5,11 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/onsi/ginkgo/v2/formatter"
-	"github.com/onsi/ginkgo/v2/ginkgo/command"
-	"github.com/onsi/ginkgo/v2/ginkgo/internal"
-	"github.com/onsi/ginkgo/v2/internal/interrupt_handler"
-	"github.com/onsi/ginkgo/v2/types"
+	"github.com/danp60/ginkgo/v2/formatter"
+	"github.com/danp60/ginkgo/v2/ginkgo/command"
+	"github.com/danp60/ginkgo/v2/ginkgo/internal"
+	"github.com/danp60/ginkgo/v2/internal/interrupt_handler"
+	"github.com/danp60/ginkgo/v2/types"
 )
 
 func BuildWatchCommand() command.Command {

@@ -7,7 +7,7 @@ import (
 	"sync"
 	"unicode"
 
-	"github.com/onsi/ginkgo/v2/formatter"
+	"github.com/danp60/ginkgo/v2/formatter"
 )
 
 type Deprecation struct {

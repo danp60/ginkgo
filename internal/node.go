@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/onsi/ginkgo/v2/types"
+	"github.com/danp60/ginkgo/v2/types"
 )
 
 var _global_node_id_counter = uint(0)

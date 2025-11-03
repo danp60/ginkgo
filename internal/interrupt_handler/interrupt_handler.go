@@ -7,7 +7,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/onsi/ginkgo/v2/internal/parallel_support"
+	"github.com/danp60/ginkgo/v2/internal/parallel_support"
 )
 
 var ABORT_POLLING_INTERVAL = 500 * time.Millisecond

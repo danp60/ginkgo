@@ -6,8 +6,8 @@ import (
 	remapped "math"
 	_ "math/cmplx"
 
-	. "github.com/onsi/ginkgo/v2"
-	. "github.com/onsi/ginkgo/v2/integration/_fixtures/flags_fixture"
+	. "github.com/danp60/ginkgo/v2"
+	. "github.com/danp60/ginkgo/v2/integration/_fixtures/flags_fixture"
 	. "github.com/onsi/gomega"
 )
 
@@ -40,7 +40,7 @@ var _ = Describe("Testing various flags", func() {
 
 	It("should detect races", func() {
 		var a string
-			c := make(chan any, 0)
+		c := make(chan any, 0)
 		go func() {
 			a = "now you don't"
 			close(c)

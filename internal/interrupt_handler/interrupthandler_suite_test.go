@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/onsi/ginkgo/v2"
-	"github.com/onsi/ginkgo/v2/internal/interrupt_handler"
+	. "github.com/danp60/ginkgo/v2"
+	"github.com/danp60/ginkgo/v2/internal/interrupt_handler"
 	. "github.com/onsi/gomega"
 )
 

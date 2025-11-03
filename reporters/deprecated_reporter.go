@@ -1,8 +1,8 @@
 package reporters
 
 import (
-	"github.com/onsi/ginkgo/v2/config"
-	"github.com/onsi/ginkgo/v2/types"
+	"github.com/danp60/ginkgo/v2/config"
+	"github.com/danp60/ginkgo/v2/types"
 )
 
 // Deprecated: DeprecatedReporter was how Ginkgo V1 provided support for CustomReporters

@@ -4,5 +4,5 @@
 package ginkgo
 
 import (
-	_ "github.com/onsi/ginkgo/v2/ginkgo"
+	_ "github.com/danp60/ginkgo/v2/ginkgo"
 )

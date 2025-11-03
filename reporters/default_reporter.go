@@ -15,8 +15,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/onsi/ginkgo/v2/formatter"
-	"github.com/onsi/ginkgo/v2/types"
+	"github.com/danp60/ginkgo/v2/formatter"
+	"github.com/danp60/ginkgo/v2/types"
 )
 
 type DefaultReporter struct {

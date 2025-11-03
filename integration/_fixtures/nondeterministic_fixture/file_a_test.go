@@ -1,7 +1,7 @@
 package nondeterministic_fixture_test
 
 import (
-	. "github.com/onsi/ginkgo/v2"
+	. "github.com/danp60/ginkgo/v2"
 )
 
 var cheat = func() {

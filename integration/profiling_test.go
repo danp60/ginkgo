@@ -10,8 +10,8 @@ import (
 
 	"fmt"
 
-	. "github.com/onsi/ginkgo/v2"
-	"github.com/onsi/ginkgo/v2/types"
+	. "github.com/danp60/ginkgo/v2"
+	"github.com/danp60/ginkgo/v2/types"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/gbytes"
 	"github.com/onsi/gomega/gexec"

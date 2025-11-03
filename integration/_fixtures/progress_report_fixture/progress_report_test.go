@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	. "github.com/onsi/ginkgo/v2"
+	. "github.com/danp60/ginkgo/v2"
 )
 
 var _ = Describe("ProgressReport", func() {

@@ -3,8 +3,8 @@ package more_ginkgo_tests_test
 import (
 	"testing"
 
-	. "github.com/onsi/ginkgo/v2"
-	. "github.com/onsi/ginkgo/v2/integration/_fixtures/more_ginkgo_tests_fixture"
+	. "github.com/danp60/ginkgo/v2"
+	. "github.com/danp60/ginkgo/v2/integration/_fixtures/more_ginkgo_tests_fixture"
 	. "github.com/onsi/gomega"
 )
 

@@ -6,7 +6,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/onsi/ginkgo/v2/types"
+	"github.com/danp60/ginkgo/v2/types"
 )
 
 type ProgressReporterManager struct {

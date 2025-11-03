@@ -6,8 +6,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/onsi/ginkgo/v2/reporters"
-	"github.com/onsi/ginkgo/v2/types"
+	"github.com/danp60/ginkgo/v2/reporters"
+	"github.com/danp60/ginkgo/v2/types"
 )
 
 type BeforeSuiteState struct {

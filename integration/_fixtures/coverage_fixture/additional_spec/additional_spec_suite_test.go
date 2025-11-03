@@ -1,11 +1,11 @@
 package additional_spec_test
 
 import (
-	. "github.com/onsi/ginkgo/v2"
+	. "github.com/danp60/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	. "github.com/onsi/ginkgo/v2/integration/_fixtures/coverage_fixture"
-	. "github.com/onsi/ginkgo/v2/integration/_fixtures/coverage_fixture/external_coverage"
+	. "github.com/danp60/ginkgo/v2/integration/_fixtures/coverage_fixture"
+	. "github.com/danp60/ginkgo/v2/integration/_fixtures/coverage_fixture/external_coverage"
 
 	"testing"
 )

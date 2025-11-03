@@ -1,10 +1,10 @@
 package first_package_test
 
 import (
-	. "github.com/onsi/ginkgo/v2/integration/_fixtures/combined_coverage_fixture/first_package"
-	. "github.com/onsi/ginkgo/v2/integration/_fixtures/combined_coverage_fixture/first_package/external_coverage"
+	. "github.com/danp60/ginkgo/v2/integration/_fixtures/combined_coverage_fixture/first_package"
+	. "github.com/danp60/ginkgo/v2/integration/_fixtures/combined_coverage_fixture/first_package/external_coverage"
 
-	. "github.com/onsi/ginkgo/v2"
+	. "github.com/danp60/ginkgo/v2"
 	. "github.com/onsi/gomega"
 )
 

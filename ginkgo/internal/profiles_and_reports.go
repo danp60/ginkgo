@@ -8,9 +8,9 @@ import (
 	"regexp"
 	"strconv"
 
+	"github.com/danp60/ginkgo/v2/reporters"
+	"github.com/danp60/ginkgo/v2/types"
 	"github.com/google/pprof/profile"
-	"github.com/onsi/ginkgo/v2/reporters"
-	"github.com/onsi/ginkgo/v2/types"
 	"golang.org/x/tools/cover"
 )
 

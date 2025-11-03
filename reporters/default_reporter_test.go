@@ -7,11 +7,11 @@ import (
 	"strings"
 	"time"
 
-	. "github.com/onsi/ginkgo/v2"
-	"github.com/onsi/ginkgo/v2/internal"
-	"github.com/onsi/ginkgo/v2/internal/test_helpers"
-	"github.com/onsi/ginkgo/v2/reporters"
-	"github.com/onsi/ginkgo/v2/types"
+	. "github.com/danp60/ginkgo/v2"
+	"github.com/danp60/ginkgo/v2/internal"
+	"github.com/danp60/ginkgo/v2/internal/test_helpers"
+	"github.com/danp60/ginkgo/v2/reporters"
+	"github.com/danp60/ginkgo/v2/types"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/format"
 	"github.com/onsi/gomega/gbytes"
@@ -29,6 +29,7 @@ var cl1 = types.CodeLocation{FileName: "cl1.go", LineNumber: 37, FullStackTrace:
 var cl2 = types.CodeLocation{FileName: "cl2.go", LineNumber: 80, FullStackTrace: "full-trace\ncl-2"}
 var cl3 = types.CodeLocation{FileName: "cl3.go", LineNumber: 103, FullStackTrace: "full-trace\ncl-3"}
 var cl4 = types.CodeLocation{FileName: "cl4.go", LineNumber: 144, FullStackTrace: "full-trace\ncl-4"}
+
 // simulate current time ast static time
 var now = time.Date(2025, time.September, 9, 10, 50, 0, 0, time.UTC)
 

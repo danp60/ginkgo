@@ -11,8 +11,8 @@ import (
 	"github.com/onsi/gomega/gcustom"
 	. "github.com/onsi/gomega/gstruct"
 
-	"github.com/onsi/ginkgo/v2/internal/interrupt_handler"
-	"github.com/onsi/ginkgo/v2/types"
+	"github.com/danp60/ginkgo/v2/internal/interrupt_handler"
+	"github.com/danp60/ginkgo/v2/types"
 )
 
 type OmegaMatcherWithDescription struct {

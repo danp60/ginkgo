@@ -3,7 +3,7 @@ package internal_integration_test
 import (
 	"strings"
 
-	. "github.com/onsi/ginkgo/v2"
+	. "github.com/danp60/ginkgo/v2"
 	. "github.com/onsi/gomega"
 )
 

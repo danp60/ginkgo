@@ -1,9 +1,9 @@
 package test_helpers
 
 import (
-	. "github.com/onsi/ginkgo/v2"
-	"github.com/onsi/ginkgo/v2/internal/parallel_support"
-	"github.com/onsi/ginkgo/v2/reporters"
+	. "github.com/danp60/ginkgo/v2"
+	"github.com/danp60/ginkgo/v2/internal/parallel_support"
+	"github.com/danp60/ginkgo/v2/reporters"
 	. "github.com/onsi/gomega"
 )
 

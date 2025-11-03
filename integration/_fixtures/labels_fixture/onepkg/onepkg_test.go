@@ -1,7 +1,7 @@
 package onepkg
 
 import (
-	. "github.com/onsi/ginkgo/v2"
+	. "github.com/danp60/ginkgo/v2"
 )
 
 var _ = Describe("OnePkg", set1, Label("chicken"), func() {

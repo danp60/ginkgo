@@ -3,12 +3,12 @@ package internal_integration_test
 import (
 	"time"
 
-	. "github.com/onsi/ginkgo/v2"
+	. "github.com/danp60/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	"github.com/onsi/ginkgo/v2/internal/interrupt_handler"
-	. "github.com/onsi/ginkgo/v2/internal/test_helpers"
-	"github.com/onsi/ginkgo/v2/types"
+	"github.com/danp60/ginkgo/v2/internal/interrupt_handler"
+	. "github.com/danp60/ginkgo/v2/internal/test_helpers"
+	"github.com/danp60/ginkgo/v2/types"
 )
 
 var _ = Describe("handling test aborts", func() {

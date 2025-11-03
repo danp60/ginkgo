@@ -8,13 +8,13 @@ import (
 	"path/filepath"
 	"time"
 
+	. "github.com/danp60/ginkgo/v2"
 	"github.com/gkampitakis/go-snaps/snaps"
 	"github.com/joshdk/go-junit"
-	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	"github.com/onsi/ginkgo/v2/reporters"
-	"github.com/onsi/ginkgo/v2/types"
+	"github.com/danp60/ginkgo/v2/reporters"
+	"github.com/danp60/ginkgo/v2/types"
 )
 
 var _ = Describe("JunitReport", func() {

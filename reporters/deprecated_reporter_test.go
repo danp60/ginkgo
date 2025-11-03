@@ -3,10 +3,10 @@ package reporters_test
 import (
 	"time"
 
-	. "github.com/onsi/ginkgo/v2"
-	"github.com/onsi/ginkgo/v2/config"
-	"github.com/onsi/ginkgo/v2/reporters"
-	"github.com/onsi/ginkgo/v2/types"
+	. "github.com/danp60/ginkgo/v2"
+	"github.com/danp60/ginkgo/v2/config"
+	"github.com/danp60/ginkgo/v2/reporters"
+	"github.com/danp60/ginkgo/v2/types"
 	. "github.com/onsi/gomega"
 )
 

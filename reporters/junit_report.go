@@ -18,8 +18,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/onsi/ginkgo/v2/config"
-	"github.com/onsi/ginkgo/v2/types"
+	"github.com/danp60/ginkgo/v2/config"
+	"github.com/danp60/ginkgo/v2/types"
 )
 
 type JunitReportConfig struct {

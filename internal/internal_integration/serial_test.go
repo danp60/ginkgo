@@ -3,8 +3,8 @@ package internal_integration_test
 import (
 	"time"
 
-	. "github.com/onsi/ginkgo/v2"
-	. "github.com/onsi/ginkgo/v2/internal/test_helpers"
+	. "github.com/danp60/ginkgo/v2"
+	. "github.com/danp60/ginkgo/v2/internal/test_helpers"
 	. "github.com/onsi/gomega"
 )
 

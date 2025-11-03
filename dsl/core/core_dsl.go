@@ -1,7 +1,7 @@
 /*
 Ginkgo is usually dot-imported via:
 
-	import . "github.com/onsi/ginkgo/v2"
+	import . "github.com/danp60/ginkgo/v2"
 
 however some parts of the DSL may conflict with existing symbols in the user's code.
 
@@ -13,7 +13,7 @@ This "core" package pulls in the core Ginkgo DSL - most test suites will only ne
 package core
 
 import (
-	"github.com/onsi/ginkgo/v2"
+	"github.com/danp60/ginkgo/v2"
 )
 
 const GINKGO_VERSION = ginkgo.GINKGO_VERSION

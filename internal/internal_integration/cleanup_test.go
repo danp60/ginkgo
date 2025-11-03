@@ -5,10 +5,10 @@ import (
 	"sync"
 	"time"
 
-	. "github.com/onsi/ginkgo/v2"
-	"github.com/onsi/ginkgo/v2/internal/interrupt_handler"
-	. "github.com/onsi/ginkgo/v2/internal/test_helpers"
-	"github.com/onsi/ginkgo/v2/types"
+	. "github.com/danp60/ginkgo/v2"
+	"github.com/danp60/ginkgo/v2/internal/interrupt_handler"
+	. "github.com/danp60/ginkgo/v2/internal/test_helpers"
+	"github.com/danp60/ginkgo/v2/types"
 	. "github.com/onsi/gomega"
 )
 

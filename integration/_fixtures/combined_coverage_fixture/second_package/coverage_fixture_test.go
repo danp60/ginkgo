@@ -1,8 +1,8 @@
 package second_package_test
 
 import (
-	. "github.com/onsi/ginkgo/v2"
-	. "github.com/onsi/ginkgo/v2/integration/_fixtures/combined_coverage_fixture/second_package"
+	. "github.com/danp60/ginkgo/v2"
+	. "github.com/danp60/ginkgo/v2/integration/_fixtures/combined_coverage_fixture/second_package"
 	. "github.com/onsi/gomega"
 )
 
