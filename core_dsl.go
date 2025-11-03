@@ -258,6 +258,7 @@ for more on how specs are parallelized in Ginkgo.
 You can also pass suite-level Label() decorators to RunSpecs.  The passed-in labels will apply to all specs in the suite.
 */
 func RunSpecs(t GinkgoTestingT, description string, args ...any) bool {
+	fmt.Printf("Running Ginkgo specification: %s\n", description)
 	if suiteDidRun {
 		exitIfErr(types.GinkgoErrors.RerunningSuite())
 	}
