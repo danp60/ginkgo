@@ -311,6 +311,7 @@ func RunSpecs(t GinkgoTestingT, description string, args ...any) bool {
 	suitePath, err = filepath.Abs(suitePath)
 	exitIfErr(err)
 
+	fmt.Printf("before global.Suite.Run\n")
 	passed, hasFocusedTests := global.Suite.Run(description, suiteLabels, suiteSemVerConstraints, suiteAroundNodes, suitePath, global.Failer, reporter, writer, outputInterceptor, interrupt_handler.NewInterruptHandler(client), client, internal.RegisterForProgressSignal, suiteConfig)
 	fmt.Printf("got passed tests and hasFocusTests: %b, %b\n", passed, hasFocusedTests)
 	outputInterceptor.Shutdown()

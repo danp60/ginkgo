@@ -188,6 +188,7 @@ func (r *DefaultReporter) WillRun(report types.SpecReport) {
 		return
 	}
 
+	fmt.Printf("Running on parallel process %d\n", report.ParallelProcess)
 	r.emitDelimiter(0)
 	r.emitBlock(r.f(r.codeLocationBlock(report, "{{/}}", v.Is(types.VerbosityLevelVeryVerbose), false)))
 }
