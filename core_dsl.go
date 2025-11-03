@@ -312,6 +312,7 @@ func RunSpecs(t GinkgoTestingT, description string, args ...any) bool {
 	exitIfErr(err)
 
 	passed, hasFocusedTests := global.Suite.Run(description, suiteLabels, suiteSemVerConstraints, suiteAroundNodes, suitePath, global.Failer, reporter, writer, outputInterceptor, interrupt_handler.NewInterruptHandler(client), client, internal.RegisterForProgressSignal, suiteConfig)
+	fmt.Printf("got passed tests and hasFocusTests: %b, %b\n", passed, hasFocusedTests)
 	outputInterceptor.Shutdown()
 
 	flagSet.ValidateDeprecations(deprecationTracker)
