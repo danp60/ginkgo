@@ -186,7 +186,7 @@ OUTER_LOOP:
 			fmt.Printf("Detected Programmatic Focus - setting exit status to %d\n", types.GINKGO_FOCUS_EXIT_CODE)
 			command.Abort(command.AbortDetails{ExitCode: types.GINKGO_FOCUS_EXIT_CODE})
 		} else {
-			fmt.Printf("Test Suite Passed\n")
+			fmt.Printf("Test Suite Passed foo!\n")
 			command.Abort(command.AbortDetails{})
 		}
 	} else {
@@ -199,7 +199,7 @@ OUTER_LOOP:
 			fmt.Fprintln(formatter.ColorableStdOut,
 				internal.FailedSuitesReport(suites, formatter.NewWithNoColorBool(r.reporterConfig.NoColor)))
 		}
-		fmt.Printf("Test Suite Failed\n")
+		fmt.Printf("Test Suite Failed foo!\n")
 		command.Abort(command.AbortDetails{ExitCode: 1})
 	}
 }
