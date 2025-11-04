@@ -236,16 +236,18 @@ func runParallel(suite TestSuite, ginkgoConfig types.SuiteConfig, reporterConfig
 			cmd.Wait()
 			waitStatus := cmd.ProcessState.Sys().(syscall.WaitStatus)
 			exitStatus := waitStatus.ExitStatus()
+			exited := waitStatus.Exited()
 			coreDump := waitStatus.CoreDump()
 			signaled := waitStatus.Signaled()
 			signal := waitStatus.Signal()
 			stopped := waitStatus.Stopped()
+			stopSignal := waitStatus.StopSignal()
 			continued := waitStatus.Continued()
 
 			exitCode := cmd.ProcessState.ExitCode()
 			fmt.Printf("Test finished with command: %s, exitStatus: %d, exitCode: %d,"+
-				" coreDump: %t, signaled: %t, signal: %d, stopped:%t, continued: %t\n", cmd.String(),
-				exitStatus, exitCode, coreDump, signaled, signal, stopped, continued)
+				" coreDump: %t, exited: %t, signaled: %t, signal: %d, stopped:%t, stopSignal: %d continued: %t\n", cmd.String(),
+				exitStatus, exitCode, coreDump, exited, signaled, signal, stopped, stopSignal, continued)
 			procResults <- procResult{
 				passed:               (exitStatus == 0) || (exitStatus == types.GINKGO_FOCUS_EXIT_CODE),
 				hasProgrammaticFocus: exitStatus == types.GINKGO_FOCUS_EXIT_CODE,
